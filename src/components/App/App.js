@@ -30,8 +30,6 @@ export default function AppHooks() {
         if (pictures.length === 0) {
           setStatus("rejected");
           toast.error(`'${imageName}' not found!`);
-        } else {
-          toast.success(`'${imageName}' is finded`);
         }
 
         setImages((prevImages) => [...prevImages, ...pictures]);
